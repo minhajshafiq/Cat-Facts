@@ -6,7 +6,7 @@ type MeowFactResponse = {
 
 async function getCatFact(): Promise<MeowFactResponse> {
   try {
-    const res = await fetch('https://meowfacts.herokuapp.com/');
+    const res = await fetch('https://meowfacts.herokuapp.com/?lang=fra');
     if (!res.ok) {
       throw new Error('Failed to fetch data');
     }
